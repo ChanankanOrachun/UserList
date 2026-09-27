@@ -41,7 +41,140 @@
           </div>
       </div>
     </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <!--First Row-->
+          <!-- First col -->
+          <div class="col-md-4">
+            <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+                data-bs-content="Email: john@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3">
+                  <div class="user-img">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="user-info">
+                    <h4>John Doe</h4>
+                    <h6>Troy, MI</h6>
+                    <span class="badge text-bg-primary">Nature</span>
+                    <span class="badge text-bg-primary">Travel</span>
+                    <span class="badge text-bg-primary">Sport</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second col -->
+          <div class="col-md-4">
+            <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+                data-bs-content="Email: lehla@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3">
+                  <div class="user-img">
+                    <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="user-info">
+                    <h4>Lehla Nichols</h4>
+                    <h6>Fort Worth, TX</h6>
+                    <span class="badge text-bg-primary">Fashion</span>
+                    <span class="badge text-bg-primary">STEM</span>
+                    <span class="badge text-bg-primary">Architecture</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third col -->
+          <div class="col-md-4">
+            <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+                data-bs-content="Email: annie@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3">
+                  <div class="user-img">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="user-info">
+                    <h4>Annie Rice</h4>
+                    <h6>Troy, MI</h6>
+                    <span class="badge text-bg-primary">Electronics</span>
+                    <span class="badge text-bg-primary">Tech</span>
+                    <span class="badge text-bg-primary">Music</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Second Row-->
+          <!-- First col -->
+          <div class="col-md-4">
+            <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+                data-bs-content="Email: noelle@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3">
+                  <div class="user-img">
+                    <img src="https://randomuser.me/api/portraits/women/31.jpg" alt="" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="user-info">
+                    <h4>Noelle Perkins</h4>
+                    <h6>Rakeshore, RD</h6>
+                    <span class="badge text-bg-primary">Nature</span>
+                    <span class="badge text-bg-primary">Reading</span>
+                    <span class="badge text-bg-primary">Music</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second col -->
+          <div class="col-md-4">
+            <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+                data-bs-content="Email: tommy@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3">
+                  <div class="user-img">
+                    <img src="https://randomuser.me/api/portraits/men/66.jpg" alt="" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="user-info">
+                    <h4>Tommy Reynolds</h4>
+                    <h6>Bruce, ST</h6>
+                    <span class="badge text-bg-primary">Tech</span>
+                    <span class="badge text-bg-primary">STEM</span>
+                    <span class="badge text-bg-primary">Music</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third col -->
+          <div class="col-md-4">
+            <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+                data-bs-content="Email: corey@gmail.com">
+              <div class="card-body">
+                <div class="d-flex gap-3">
+                  <div class="user-img">
+                    <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="" class="rounded-circle img-fluid">
+                  </div>
+                  <div class="user-info">
+                    <h4>Corey Richardson</h4>
+                    <h6>Rocust, RD</h6>
+                    <span class="badge text-bg-primary">Nature</span>
+                    <span class="badge text-bg-primary">Electronics</span>
+                    <span class="badge text-bg-primary">Karaoke</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/darkmodetoggle.js"></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
   </body>
 </html>
